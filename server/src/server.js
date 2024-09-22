@@ -12,9 +12,13 @@ const io = new Server(server, {
     skipMiddlewares: true,
   },
   cors: {
-    origin: "http://localhost:5173",
+    origin: {
+      origin: "https://socket-app-7knc.onrender.com/",
+      methods: ["GET", "POST"]
+  }
   },
 });
+
 
 const PORT = 3000;
 
