@@ -1,7 +1,6 @@
-const path = require("node:path");
+import path from "node:path";
 
-
-module.exports = {
+const config = {
   entry: "./server.js",
   target: "node",
   mode: "production",
@@ -19,3 +18,4 @@ module.exports = {
     "utf-8-validate": "utf-8-validate",
   },
 };
+export default config
